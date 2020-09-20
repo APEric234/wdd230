@@ -1,2 +1,5 @@
 var x = document.lastModified;
-document.getElementById("lastMod").innerHTML = x;
+var y=document.getElementById("lastMod");
+alert(x)
+alert(y)
+y.innerHTML = x;
