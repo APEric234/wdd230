@@ -1,6 +1,10 @@
 body {
   width:50%;
-  margin:25%;
+  margin-right:25%;
+  margin-left:25%;
+  margin-top:auto;
+  margin-bottom:auto;
+  
   font-size: 16px;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
