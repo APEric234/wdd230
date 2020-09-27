@@ -2,7 +2,7 @@
   float: left;
   width: 20%;
   text-align: left;
-  margin-left:20px;
+  margin-left:10px;
   margin-right:20%;
 }
 
@@ -13,7 +13,7 @@
   clear: both;
 }
 .first {
-  margin-left: 30%;
+  margin-left: 33%;
   margin-right:5px;
 }
 h1{
@@ -34,4 +34,3 @@ footer{
   margin-right: 40%;
   text-align: center;
 }
-body{background-color: red;}
