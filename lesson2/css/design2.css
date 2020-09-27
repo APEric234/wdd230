@@ -1,46 +1,60 @@
-.column {
-  float: left;
-  width: 20%;
-  text-align: left;
-  margin-left:10px;
-  margin-right:20%;
-}
+
 main{
   font-family: 'Roboto', sans-serif;
+  display:grid;
+  grid-gap: 20px;
+  max-width: 30%;
+  margin-right: 30%;
+  margin-left: 30%;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-areas:
+    "header"
+		"nav"
+		"main"
+    "footer";
+  align-content: center;
 }
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+
+@media only screen and (min-width:40em){
+  main{
+    font-family: 'Roboto', sans-serif;
+    display:grid;
+    grid-gap: 20px;
+    max-width: 760px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+      "header"
+      "nav"
+      "main"
+      "footer";
+  }
 }
-.first {
-  margin-left: 33%;
-  margin-right:5px;
+@media only screen and (min-width:70em){
+  main{
+    font-family: 'Roboto', sans-serif;
+    display:grid;
+    grid-gap: 20px;
+    max-width: 760px;
+    
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+      "header"
+      "nav"
+      "main"
+      "footer";
+  }
 }
 h1{
-  text-align: center;
+  text-align:center;
 }
-h2{
-  text-align: center;
-  margin-top:50%;
-  margin-bottom:50%;
+div{
+  min-width:200px;
+  background-color: gray;
 }
-h3{
-  text-align: center;
-  margin-top:50%;
-  margin-bottom:50%;
-}
-.column img{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  min-width: 200px;
-}
-footer{
-  display: block;
-  margin-left: 40%;
-  margin-right: 40%;
-  text-align: center;
+img{
+  min-width: 100px;
+  min-height:200px;
 }
