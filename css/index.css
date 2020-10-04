@@ -1,3 +1,10 @@
+:root {
+--cool-grey: #808cb0ff;
+--almond: #f2e2d2ff;
+--oxford-blue: #091540ff;
+--persian-blue: #1b2cc1ff;
+--rifle-green: #45462aff;
+}
 body {
   width:50%;
   margin-right:25%;
@@ -8,6 +15,7 @@ body {
   font-size: 16px;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
+
 main{
   z-index:1;
   position: relative;

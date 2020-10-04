@@ -1,0 +1,28 @@
+After completing the assignment, please answer the questions in this text file and submit it to I-Learn.
+
+1. Copy and paste the URL for your web application:
+https://tranquil-crag-86225.herokuapp.com/homepag/homepage.php
+
+2. Copy and paste the URL for your source code repository (e.g., GitHub):
+
+https://github.com/APEric234/webbackendDev
+3. Briefly list and describe the elements of the application that are functioning. Include any special instructions about how to login and/or use your application.
+all
+
+4. Briefly describe any pieces of the assignment that are not yet working correctly.
+none
+
+5. Briefly describe the "coolest" thing you learned while completing this assignment.
+
+6. What is the difference between an HTTP Get and Post? When should each be used?
+get is used for retrieving data from a site while post is used to change the values of something
+
+7. Please select the category you feel best describes your assignment:
+
+5 - Shows creativity and excels above and beyond requirements
+
+
+8. Provide a brief justification (1-2 sentences) for selecting that category.
+
+
+i have some cool on click effects going on that i think show my  creativity
