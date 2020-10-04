@@ -24,6 +24,7 @@
     height: 100%;
   }
   ul{
+    font-family: 'Merriweather', serif;
     list-style-type: none;
     align-items: center;
     text-align: center;
