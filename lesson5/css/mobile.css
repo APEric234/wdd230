@@ -29,7 +29,14 @@ h6 {
 	margin: 0;
 	padding: 0;
 }
-
+.block {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+	margin-bottom: 10px;
+	background-color:  var(--rifle-green);
+}
 header {
 	display: flex;
 	flex-direction: column;
