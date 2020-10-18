@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Weather is Awesome! | Preston</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/tablet.css">
+    <link rel="stylesheet" href="css/full.css">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="images/cloud.jpg" alt="Weather is awesome Logo">
+        </div>
+        <div id="branding">
+            <h1>Cloud's are Awesome</h1>
+            <span>Weather for children</span>
+        </div>
+    </header>
+
+    <?php 
+        $date = date('D', time());
+        echo("$date");
+        if($date == "fri"){
+            echo('<div class="block"><P>Its pancake day</p></div>');
+        }
+        ?>
+    
+    <nav>
+
+        
+        $date = date('m/d/Y h:i:s a', time());
+        <ul id="navigation" class="navigation">
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a class="active" href="preston-4.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Preston Idaho</h2>
+        <section id="hero">
+            22&deg;
+        </section>
+        <h2>5-Day Forecast</h2>
+        <section id="forecast">
+
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+        </section>
+        <section id="article">
+            <h2>Isn't learning about the weather fun?</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate vel placeat odio laudantium iusto sapiente recusandae explicabo, inventore minus optio labore, officiis id, sunt hic ratione quo ipsa reprehenderit laboriosam? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime nisi consequuntur optio alias quaerat nemo odit totam, aspernatur assumenda et. Facilis provident nobis perspiciatis? Impedit tenetur veniam quidem laborum nam!</p>
+        </section>
+        <section id="contact">
+          <h1>Contat us here</h1>
+            <h2>Contact Information</h2>
+            <p>Address</p>
+            <p>Email</p>
+            <P>Phone</P>
+        </section>
+    </main>
+    <footer>
+      <p id="first">@ 2020| Eric Peter Allen | Utah | BYUI Online Learning </p>
+      <p id="second">Last Updated : <span id="lastMod">dummy</span></p>
+    </footer>
+    <script src="js/js.js"></script>
+</body>
+</html>
