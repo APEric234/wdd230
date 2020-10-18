@@ -49,6 +49,8 @@
         <h2>5-Day Forecast</h2>
         <section id="forecast">
             <script>
+                let app = document.querySelector('#forecast');
+
                 var i;
                 var text;
                 for(  i =0; i<5;i++){
@@ -63,7 +65,7 @@
                 var low = base/1 * -1 ;
                 var div = document.createElement("div");
                 div.innerHTML ="high of " + high + "and a low of "+ low;
-                document.append(div);
+                app.append(div);
                 
                 
                 }
