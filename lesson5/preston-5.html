@@ -19,13 +19,16 @@
             <span>Weather for children</span>
         </div>
     </header>
+    
+    <div class="block" display="none;">Saturday = Preston Pancakes inthe park! 9:00 am Friday at the city park.</div>
     <script>
         var today = new Date();
+        let app = document.querySelector('.block');
+        
         if(today.getDay() == 6){
-            echo('<div class="block">Saturday = Preston {ancakes inthe park! 9:00 am Friday at the city park.</div>');
+            app.style.display="block;"
         }
     </script>
-    
     <nav>
 
         <ul id="navigation" class="navigation">
