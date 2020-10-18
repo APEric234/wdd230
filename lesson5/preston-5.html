@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="css/tablet.css">
     <link rel="stylesheet" href="css/full.css">
 </head>
+
 <body>
     <header>
         <div id="logo">
@@ -19,7 +21,7 @@
             <span>Weather for children</span>
         </div>
     </header>
-    
+
     <nav>
 
         <ul id="navigation" class="navigation">
@@ -33,16 +35,17 @@
         </ul>
     </nav>
     <main>
-        
-    <div class="block" display="none;">Saturday = Preston Pancakes inthe park! 9:00 am Friday at the city park.</div>
-    <script>
-        var today = new Date();
-        let app = document.querySelector('.block');
-        
-        if(today.getDay() == 6){
-            app.style.display="block;"
-        }
-    </script>
+
+        <div class="block" display="none;">Saturday = Preston Pancakes inthe park! 9:00 am Friday at the city park.
+        </div>
+        <script>
+            var today = new Date();
+            let app = document.querySelector('.block');
+
+            if (today.getDay() == 6) {
+                app.style.display = "block;"
+            }
+        </script>
         <h2>Preston Idaho</h2>
         <section id="hero">
             22&deg;
@@ -54,40 +57,42 @@
 
                 var i;
                 var text;
-                for(  i =0; i<5;i++){
-                    var base=Math.floor(Math.random() * 120); 
-                var sign=Math.floor(Math.random() * 1); 
-                var high=base;  
-                if(sign>0){
-                    high = base/3 * -1 ;
+                for (i = 0; i < 5; i++) {
+                    var base = Math.floor(Math.random() * 120);
+                    var sign = Math.floor(Math.random() * 1);
+                    var high = base;
+                    if (sign > 0) {
+                        high = base / 3 * -1;
+
+                    }
+                    var base = Math.floor(Math.random() * 120);
+                    var low = base / 1 * -1;
+                    var div = document.createElement("div");
+                    div.id = "temps";
+                    div.innerHTML = "high of " + high + " \n low of " + low;
+                    if (high > 80) {
+                        div.style.backgroundImage = "url('images/sun.png')";
+                        div.style.color = "var(--persian-blue)"
+                    } else {
+                        div.style.backgroundImage = "url('images/rain.png')";
+                        div.style.color = "var(--almond)"
+                    }
+                    app.append(div);
+
 
                 }
-                var base=Math.floor(Math.random() * 120); 
-                var low = base/1 * -1 ;
-                var div = document.createElement("div");
-                div.id = "temps";
-                div.innerHTML ="high of " + high + " \n low of "+ low;
-                if(high > 80){
-                    div.style.backgroundImage = "url('images/sun.png')";
-                    div.style.color = "var(--persian-blue)"
-                }else {
-                    div.style.backgroundImage = "url('images/rain.png')";
-                    div.style.color = "var(--almond)"
-                }
-                app.append(div);
-                
-                
-                }
-               
-                
             </script>
         </section>
         <section id="article">
             <h2>Isn't learning about the weather fun?</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate vel placeat odio laudantium iusto sapiente recusandae explicabo, inventore minus optio labore, officiis id, sunt hic ratione quo ipsa reprehenderit laboriosam? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime nisi consequuntur optio alias quaerat nemo odit totam, aspernatur assumenda et. Facilis provident nobis perspiciatis? Impedit tenetur veniam quidem laborum nam!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate vel placeat odio laudantium iusto
+                sapiente recusandae explicabo, inventore minus optio labore, officiis id, sunt hic ratione quo ipsa
+                reprehenderit laboriosam? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime nisi
+                consequuntur optio alias quaerat nemo odit totam, aspernatur assumenda et. Facilis provident nobis
+                perspiciatis? Impedit tenetur veniam quidem laborum nam!</p>
         </section>
         <section id="contact">
-          <h1>Contat us here</h1>
+            <h1>Contat us here</h1>
             <h2>Contact Information</h2>
             <p>Address</p>
             <p>Email</p>
@@ -95,9 +100,10 @@
         </section>
     </main>
     <footer>
-      <p id="first">@ 2020| Eric Peter Allen | Utah | BYUI Online Learning </p>
-      <p id="second">Last Updated : <span id="lastMod">dummy</span></p>
+        <p id="first">@ 2020| Eric Peter Allen | Utah | BYUI Online Learning </p>
+        <p id="second">Last Updated : <span id="lastMod">dummy</span></p>
     </footer>
     <script src="js/js.js"></script>
 </body>
+
 </html>
