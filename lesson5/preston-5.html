@@ -19,14 +19,15 @@
             <span>Weather for children</span>
         </div>
     </header>
-
-    <?php 
-        $date = date('D', time());
-        echo("$date");
-        if($date == "fri"){
+    <script>
+        var today = new Date();
+        myDate.setFullYear(2020);
+        myDate.setMonth(10);
+        myDate.setDate(16);
+        if(today.getDay() == 5){
             echo('<div class="block"><P>Its pancake day</p></div>');
         }
-        ?>
+    </script>
     
     <nav>
 
