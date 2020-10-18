@@ -61,11 +61,14 @@
                 var base=Math.floor(Math.random() * 120); 
                 var low = base/1 * -1 ;
                 var div = document.createElement("div");
+                div.id = "temps";
                 div.innerHTML ="high of " + high + " \n low of "+ low;
                 if(high > 80){
                     div.style.backgroundImage = "url('images/sun.png')";
+                    div.style.color = "var(--persian-blue)"
                 }else {
                     div.style.backgroundImage = "url('images/rain.png')";
+                    div.style.color = "var(--almond)"
                 }
                 app.append(div);
                 
