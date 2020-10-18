@@ -50,8 +50,29 @@
         </section>
         <h2>5-Day Forecast</h2>
         <section id="forecast">
+            <script>
+                var i;
+                var text;
+                for(  i =0; i<5;i++){
+                    var base=Math.floor(Math.random() * 120); 
+                var sign=Math.floor(Math.random() * 1); 
+                var high=base;  
+                if(sign>0){
+                    high = base/3 * -1 ;
 
-            <div>1</div>
+                }
+                var base=Math.floor(Math.random() * 120); 
+                var low = base/1 * -1 ;
+                var div = document.createElement("div");
+                div.innerHTML ="high of " + high + "and a low of "+ low;
+                document.append(div);
+                
+                
+                }
+               
+                
+            </script>
+            
             <div>2</div>
             <div>3</div>
             <div>4</div>
