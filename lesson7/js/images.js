@@ -6,8 +6,9 @@ function preloadImage (img){
   if(!src){
     return;
   }
-
-  img.src=src
+  const class_set="visible";
+  img.src=src;
+  img.classList.add(class_set);
 }
 
 const imgOptions = {};
