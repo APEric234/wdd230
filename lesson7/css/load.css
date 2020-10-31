@@ -5,7 +5,9 @@
   --persian-blue: #1b2cc1ff;
   --rifle-green: #45462aff;
 	}
-
+h1{
+	text-align: center;
+}
 .photos {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
