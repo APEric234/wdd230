@@ -13,9 +13,11 @@ h1{
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 10px;
-  grid-auto-rows: minmax(300px, auto);
-
+	grid-auto-rows: minmax(300px, auto);
+	align-items: center;
+	justify-items: center;
 }
+
 .photos img{
   opacity: 0;
 	transition: .8s opacity;
