@@ -1,0 +1,14 @@
+@media (min-width: 1000px) {
+
+  .photos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(300px, auto);
+  
+  }
+.photo:hover{
+  box-shadow: 5px 10px;
+}
+
+}
