@@ -39,7 +39,27 @@
 
         <div class="block" display="none;">Saturday = Preston Pancakes in the park! 9:00 am Friday at the city park.
         </div>
+        <script>
+            var today = new Date();
+            let app = document.querySelector('.block');
 
+            if (today.getDay() == 6) {
+                app.style.display = "block;";
+                app.style.backgroundColor = "gold";
+            }
+        </script>
+        <h2>Preston Idaho</h2>
+        <section id="hero">
+            <picture>
+                <source media="(min-width:900px)" srcset="images/hero.jpg">
+                <source media="(min-width:465px)" srcset="images/hero_medium.jpg">
+                <img src="images/hero_small.jpg" alt="Flowers" style="width:auto;">
+            </picture>
+            <div id="temp">Temperature 24%</div>
+            <div id="windspeed">Temperature 23%</div>
+            <div id="windchill">Temperature 22%</div>
+
+        </section>
 
         <form method="get" action="thankyou.html">
             <datalist id="stormtype">
