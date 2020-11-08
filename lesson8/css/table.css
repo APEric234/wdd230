@@ -1,0 +1,40 @@
+body > table > tfoot > tr > td{
+  font-size: small;
+  width:70%;
+}
+table tbody>tr:nth-child(even)>td {
+  background: #e7f0ed ;
+}
+table * {
+  background-color: #e7ffed;
+  border: 1px solid grey;
+  font-family: 'Ubuntu';
+
+}
+
+thead * {
+  align-items: center;
+  background-color: #7fb9c2;
+  font-weight: bold;
+}
+
+table tbody>tr>th {
+  background-color: #628ca6;
+  color: white;
+}
+
+
+i{
+  border:none;
+}
+
+table {
+  border-collapse: collapse;
+  margin: auto;
+  text-align: center;
+  box-shadow: 8px 8px 8px 8px;
+}
+.special{
+  background-color: #628ca6;
+  color: white;
+}
