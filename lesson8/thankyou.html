@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Weather is Awesome! | Preston</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/tablet.css">
+    <link rel="stylesheet" href="css/full.css">
+    <script src="js/updateForm.js"></script>
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <img src="images/cloud.jpg" alt="Weather is awesome Logo">
+        </div>
+        <div id="branding">
+            <h1>Cloud's are Awesome</h1>
+            <span>Weather for children</span>
+        </div>
+    </header>
+
+    <nav>
+
+        <ul id="navigation" class="navigation">
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a class="active" href="preston-6.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+
+        <div class="block" display="none;">Saturday = Preston Pancakes in the park! 9:00 am Friday at the city park.
+        </div>
+        <script>
+            var today = new Date();
+            let app = document.querySelector('.block');
+
+            if (today.getDay() == 6) {
+                app.style.display = "block;";
+                app.style.backgroundColor = "gold";
+            }
+        </script>
+
+
+        </section>
+       <section id="forecast">
+           <h1>Thank you for filling out the form</h1>
+        </section>
+=
+    </main>
+    <footer>
+        <p id="first">@ 2020| Eric Peter Allen | Utah | BYUI Online Learning </p>
+        <p id="second">Last Updated : <span id="lastMod">dummy</span></p>
+    </footer>
+    <script src="js/js.js"></script>
+</body>
+
+</html>
