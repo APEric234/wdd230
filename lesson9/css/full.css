@@ -1,0 +1,7 @@
+@media (min-width: 1000px) {
+  div.cards{
+    grid-template-columns:1fr 1fr 1fr 1fr;
+
+  }
+
+}
