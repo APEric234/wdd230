@@ -8,6 +8,7 @@ div.cards{
   color:#4d4d96;
   background-color:#dddddd;
   overflow-y: scroll;
+  box-shadow: 20px 20px 20px 20px gray;
 }
 div.cards section{
   background-color:  #b9b9cc;
