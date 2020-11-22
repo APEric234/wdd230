@@ -47,9 +47,15 @@ h6 {
 	left: 16px;
 	font-size: 24px;
 }
-#windspeed {
+#minmax {
   position: absolute;
   top: 32px;
+	left: 16px;
+	font-size: 24px;
+}
+#speed {
+  position: absolute;
+  top: 70px;
 	left: 16px;
 	font-size: 24px;
 }
