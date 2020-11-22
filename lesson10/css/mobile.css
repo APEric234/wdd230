@@ -223,9 +223,9 @@ footer {
 	line-height: 1.5em;
 	background-color:  var(--rifle-green);
 }
-
+foo
 footer a, footer a:visited {
-	color: var(--rifle-green);
+	color: var(--almond);
 	text-decoration: none;
 }
 
