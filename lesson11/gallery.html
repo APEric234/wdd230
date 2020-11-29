@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Lazy loading images</title>
+  <link rel="stylesheet" href="css/load.css">
+  <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+  <nav>
+
+    <ul id="navigation" class="navigation">
+        <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="preston.html">Preston</a></li>
+        <li><a href="sodasprings.html">Soda Springs</a></li>
+        <li><a href="fishhaven.html">Fish Haven</a></li>
+        <li><a href="stormcenter.html">Storm Center</a></li>
+        <li><a class="active" href="gallery.html">Gallery</a></li>
+    </ul>
+</nav>
+  <h1>Photos loading lazily</h1>
+  <div class="photos">
+  <div class="one"><picture id="photo1">
+      <img src="images/cursive.jpg" data-img="images/flowers.jpg" alt="Flowers" style="width:auto;">
+    </picture>
+  </div>
+  <div class="two">
+    <picture id="photo2">
+      <img src="images/cursive.jpg" data-img="images/flowers.jpg" alt="Flowers" style="width:auto;">
+    </picture>
+  </div>
+  <div class="three">
+    <picture id="photo3">
+      <img src="images/cursive.jpg" data-img="images/flowers.jpg" alt="Flowers" style="width:auto;">
+    </picture>
+  </div>
+
+  <div class="four">
+
+    <picture id="photo4">
+      <img src="images/cursive.jpg" data-img="images/flowers.jpg" alt="Flowers" style="width:auto;">
+    </picture>
+    
+  </div>
+  <div class="five">
+    <picture id="photo5">
+      <img src="images/cursive.jpg" data-img="images/flowers.jpg" alt="Flowers" style="width:auto;">
+    </picture>
+    
+  </div>
+</div>
+</body>
+
+
+<footer>
+  <p id="first">@ 2020| Eric Peter Allen | Utah | BYUI Online Learning </p>
+  <p id="second">Last Updated : <span id="lastMod">dummy</span></p>
+</footer>
+<script src="js/images.js"></script>
+<script src="js/bottom.js"></script>
+</html>

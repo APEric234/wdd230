@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Weather is Awesome! | Preston</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/tablet.css">
+    <link rel="stylesheet" href="css/full.css">
+    <script src="js/updateForm.js"></script>
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <img src="images/cloud.jpg" alt="Weather is awesome Logo">
+        </div>
+        <div id="branding">
+            <h1>Cloud's are Awesome</h1>
+            <span>Weather for children</span>
+        </div>
+    </header>
+
+    <nav>
+
+        <ul id="navigation" class="navigation">
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a class="active" href="preston-6.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+
+        <div class="block" display="none;">Saturday = Preston Pancakes in the park! 9:00 am Friday at the city park.
+        </div>
+        <script>
+            var today = new Date();
+            let app = document.querySelector('.block');
+
+            if (today.getDay() == 6) {
+                app.style.display = "block;";
+                app.style.backgroundColor = "gold";
+            }
+        </script>
+        <h2>Preston Idaho</h2>
+        <section id="hero">
+            <picture>
+                <source media="(min-width:900px)" srcset="images/hero.jpg">
+                <source media="(min-width:465px)" srcset="images/hero_medium.jpg">
+                <img src="images/hero_small.jpg" alt="Flowers" style="width:auto;">
+            </picture>
+            <div id="temp">Temperature 24%</div>
+            <div id="windspeed">Temperature 23%</div>
+            <div id="windchill">Temperature 22%</div>
+
+        </section>
+
+        <form method="get" action="thankyou.html">
+            <datalist id="stormtype">
+                <option value="Flash Flood"></option>
+                <option value="Hail"></option>
+                <option value="Hurricane"></option>
+                <option value="Thunderstorm"></option>
+                <option value="Tornado"></option>
+            </datalist>
+            <label for="fullname">Full Name:</label> <input type="text" id="fullname" name="fname" value="" required
+                minlength="6" pattern="[A-Z]*"><br>
+            <label for="email">Email:</label> <input type="email" id="email" name="email"
+                value="dummy@mailinator.com"><br>
+            <label for="phone">Phone Number:</label> <input type="text" id="phone" name="phone" value="" required><br>
+            <label for="zip">Zip Code:</label> <input type="number" id="zip" name="zip" value="" required
+                minlength="5"><br>
+            <label for="date">Date of Storm:</label> <input type="date" id="date" name="date" value=""><br>
+            <label for="type">Storm Type:</label> <input list="stormtype" id="type" name="type"><br>
+            <fieldset>
+            <label for="severity">Storm Severity:<input type="range" id="severity" name="severity" value="5" min="1"
+                    max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                <span id="severityvalue">5</span>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Storm Region</legend>
+                <select id="region" name="region">
+                    <option value="" disabled>Select Region ...</option>
+                    <option value="Preston">Preston</option>
+                    <option value="Soda">Soda Springs</option>
+                    <option value="Fish">Fish Haven</option>
+                </select>
+            </label>
+        </fieldset>
+            <fieldset>
+            <legend>Are you in danger? <em>(Choose one)</em></legend>
+            <div class="selection">
+				<label for="yes"><input type="radio" id="yes" name="danger" value="yes" > Yes</label>
+			</div><div class="selection">
+				<label for="maybe"><input type="radio" id="maybe" name="danger" value="maybe" > Maybe</label>
+			</div><div class="selection">
+				<label for="no"><input type="radio" id="no" name="danger" value="no" checked> No</label>
+			</div>
+        </fieldset>
+        <fieldset>
+            <legend> Additional information or comments</legend>
+            <label for="no"><input type="textarea" id="comments" name="comments" value=""> Additional information or comments: </label>
+            
+        </fieldset>
+            <input type="submit">
+    </main>
+    <footer>
+        <p id="first">@ 2020| Eric Peter Allen | Utah | BYUI Online Learning </p>
+        <p id="second">Last Updated : <span id="lastMod">dummy</span></p>
+    </footer>
+    <script src="js/js.js"></script>
+    <script src="js/windchill.js"></script>
+</body>
+
+</html>
