@@ -1,25 +1,40 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <title>Lazy loading images</title>
-  <link rel="stylesheet" href="css/load.css">
-  <link rel="stylesheet" href="css/large.css">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Weather is Awesome! | Preston</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/load.css">
+    <link rel="stylesheet" href="css/large.css">
+    
 </head>
 
 <body>
-  <nav>
+    <header>
+        <div id="logo">
+            <img src="images/cloud.png" alt="Weather is awesome Logo">
+        </div>
+        <div id="branding">
+            <h1>Cloud's are Awesome</h1>
+            <span>Weather for children</span>
+        </div>
+    </header>
 
-    <ul id="navigation" class="navigation">
-        <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="preston.html">Preston</a></li>
-        <li><a href="sodasprings.html">Soda Springs</a></li>
-        <li><a href="fishhaven.html">Fish Haven</a></li>
-        <li><a href="stormcenter.html">Storm Center</a></li>
-        <li><a class="active" href="gallery.html">Gallery</a></li>
-    </ul>
-</nav>
+    <nav>
+
+        <ul id="navigation" class="navigation">
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="preston.html">Preston</a></li>
+            <li><a href="sodasprings.html">Soda Springs</a></li>
+            <li><a href="fishhaven.html">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
   <h1>Photos loading lazily</h1>
   <div class="photos">
   <div class="one"><picture id="photo1">
@@ -55,9 +70,10 @@
 
 
 <footer>
-  <p id="first">@ 2020| Eric Peter Allen | Utah | BYUI Online Learning </p>
+  <p id="first">@ 2020| Eric Peter Allen | Weather information provided by <a href="https://openweathermap.org/">OpenWeatherMap</a>| Utah | BYUI Online Learning </p>
   <p id="second">Last Updated : <span id="lastMod">dummy</span></p>
 </footer>
 <script src="js/images.js"></script>
 <script src="js/bottom.js"></script>
+<script src="js/js.js"></script>
 </html>

@@ -14,14 +14,14 @@
 <body>
     <header>
         <div id="logo">
-            <img src="images/cloud.jpg" alt="Weather is awesome Logo">
+            <img src="images/cloud.png" alt="Weather is awesome Logo">
         </div>
         <div id="branding">
             <h1>Cloud's are Awesome</h1>
             <span>Weather for children</span>
         </div>
     </header>
-
+    <div style="display: none;" id="location">Preston</div>
     <nav>
 
         <ul id="navigation" class="navigation">
@@ -36,14 +36,16 @@
     </nav>
     <main>
 
-        <div class="block" display="none;">Saturday = Preston Pancakes in the park! 9:00 am Friday at the city park.</div>
+        <div class="block" style="display:none;">Saturday = Preston Pancakes in the park! 9:00 am Friday at the city
+            park.
+        </div>
         <script>
             var today = new Date();
             let app = document.querySelector('.block');
 
             if (today.getDay() == 6) {
                 app.style.display = "block;";
-                app.style.backgroundColor = "gold" ;
+                app.style.backgroundColor = "gold";
             }
         </script>
         <h2>Preston Idaho</h2>
@@ -52,26 +54,34 @@
                 <source media="(min-width:900px)" srcset="images/hero.jpg">
                 <source media="(min-width:465px)" srcset="images/hero_medium.jpg">
                 <img src="images/hero_small.jpg" alt="Flowers" style="width:auto;">
-              </picture>
-              <div id="temp">Temperature 24%</div>
-              <div id="minmax">Temperature 23%</div>
-              <div id="windchill">Temperature 22%</div>
-              <div id="speed"> 22 miles per hour</div>
-              
+            </picture>
+            <div id="weath">
+                <p id="temp">Temperature 24%</p>
+                <p id="minmax">Temperature 23%</p>
+                <p id="windchill">Temperature 22%</p>
+                <p id="speed"> 22 miles per hour</p>
+            </div>
+
+
         </section>
         <h2>5-Day Forecast</h2>
         <section id="forecast">
-            <script src="js/getRandomTemp.js"></script>    
+            <script src="js/getRandomTemp.js"></script>
         </section>
-        
+
         <section id="article">
-            <h2>Isn't learning about the weather fun?</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate vel placeat odio laudantium iusto
-                sapiente recusandae explicabo, inventore minus optio labore, officiis id, sunt hic ratione quo ipsa
-                reprehenderit laboriosam? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime nisi
-                consequuntur optio alias quaerat nemo odit totam, aspernatur assumenda et. Facilis provident nobis
-                perspiciatis? Impedit tenetur veniam quidem laborum nam!</p>
+            <h2>Why preston was once called Worm Creek</h2>
+            <p>Preston was originally called Worm Creek when it was settled in 1888 because the waterways in the area
+                resembled worms as they curved and wound their way through the countryside. (Another story relates that
+                it was actually WARM Creek, because of the many hot springs in the area, but someone got it wrong and
+                WORM Creek stuck!)
+                Read the original story <a href="https://prestonchamber.org/community/preston-history/"> here </a>
+            </p>
         </section>
+        <section id="events">
+
+        </section>
+        <script src="js/getArticle.js"></script>
         <section id="contact">
             <h1>Contat us here</h1>
             <h2>Contact Information</h2>
@@ -81,11 +91,11 @@
         </section>
     </main>
     <footer>
-        <p id="first">@ 2020| Eric Peter Allen | Utah | BYUI Online Learning </p>
+        <p id="first">@ 2020| Eric Peter Allen | Weather information provided by <a href="https://openweathermap.org/">OpenWeatherMap</a>| Utah | BYUI Online Learning </p>
         <p id="second">Last Updated : <span id="lastMod">dummy</span></p>
-    </footer>
+      </footer>
     <script src="js/js.js"></script>
-    <script src="js/gettemp.js" ></script> 
+    <script src="js/gettemp.js"></script>
 </body>
 
 </html>

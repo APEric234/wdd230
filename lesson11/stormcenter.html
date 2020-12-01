@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Weather is Awesome! | Preston</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/mobilestorm.css">
     <link rel="stylesheet" href="css/tablet.css">
     <link rel="stylesheet" href="css/full.css">
     <script src="js/updateForm.js"></script>
@@ -15,7 +15,7 @@
 <body>
     <header>
         <div id="logo">
-            <img src="images/cloud.jpg" alt="Weather is awesome Logo">
+            <img src="images/cloud.png" alt="Weather is awesome Logo">
         </div>
         <div id="branding">
             <h1>Cloud's are Awesome</h1>
@@ -37,7 +37,7 @@
     </nav>
     <main>
 
-        <div class="block" display="none;">Saturday = Preston Pancakes in the park! 9:00 am Friday at the city park.
+        <div class="block" style="display:none;">Saturday = Preston Pancakes in the park! 9:00 am Friday at the city park.
         </div>
         <script>
             var today = new Date();
@@ -48,17 +48,9 @@
                 app.style.backgroundColor = "gold";
             }
         </script>
-        <h2>Preston Idaho</h2>
-        <section id="hero">
-            <picture>
-                <source media="(min-width:900px)" srcset="images/hero.jpg">
-                <source media="(min-width:465px)" srcset="images/hero_medium.jpg">
-                <img src="images/hero_small.jpg" alt="Flowers" style="width:auto;">
-            </picture>
-            <div id="temp">Temperature 24%</div>
-            <div id="windspeed">Temperature 23%</div>
-            <div id="windchill">Temperature 22%</div>
-
+        <div class="storm">
+        <h2>Report a Storm</h2>
+        
         </section>
 
         <form method="get" action="thankyou.html">
@@ -110,11 +102,12 @@
             
         </fieldset>
             <input type="submit">
+        </div>
     </main>
     <footer>
-        <p id="first">@ 2020| Eric Peter Allen | Utah | BYUI Online Learning </p>
+        <p id="first">@ 2020| Eric Peter Allen | Weather information provided by <a href="https://openweathermap.org/">OpenWeatherMap</a>| Utah | BYUI Online Learning </p>
         <p id="second">Last Updated : <span id="lastMod">dummy</span></p>
-    </footer>
+      </footer>
     <script src="js/js.js"></script>
     <script src="js/windchill.js"></script>
 </body>

@@ -31,34 +31,28 @@ h6 {
 	margin: 0;
 	padding: 0;
 }
+#weath{
+	position: absolute;
+	top:0;
+	left:0;
+	width: 400px;
+    height: 250px;
+    border: 2px solid lightgreen;
+	background-color: tan;
+	overflow: hidden;
+
+}
+
 #hero{
 	position: relative;
 	text-align: center;
 }
-#temp {
-  position: absolute;
-  top: 8px;
-	left: 16px;
+#weath>*{
+  position: relative;
+  
 	font-size: 24px;
 }
-#windchill {
-  position: absolute;
-  top: 58px;
-	left: 16px;
-	font-size: 24px;
-}
-#minmax {
-  position: absolute;
-  top: 32px;
-	left: 16px;
-	font-size: 24px;
-}
-#speed {
-  position: absolute;
-  top: 70px;
-	left: 16px;
-	font-size: 24px;
-}
+
 .block {
 	display: flex;
 	align-items: center;
@@ -185,7 +179,6 @@ main #hero {
 	min-height: 150px;
 	margin-bottom: 20px;
 	font-size: 5em;
-	background-color: var(--persian-blue);
 	border-radius: 10px;
 	border: 1px solid var(--rifle-green);
 }
@@ -208,7 +201,10 @@ main #forecast div {
 	border: 1px solid #8DABCE;
 }
 
-#article, #contact {
+main>h2{
+	color:lightgreen;
+}
+#article, #contact,#events {
 	margin-bottom: 20px;
 	padding: 20px;
 	line-height: 1.5em;
