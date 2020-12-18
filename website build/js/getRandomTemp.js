@@ -6,10 +6,11 @@ let kelvinconvert= function(param1){
 var place= document.getElementById('location');
 var image="url(http://openweathermap.org/img/wn/"
 var image_end="@2x.png)"
-const apiURLForecasts = 'https://api.openweathermap.org/data/2.5/forecast?q='+place.textContent+',US&appid=b29ef4934f838648bd16e4f3c5bd7dfc';
+const apiURLForecasts = 'https://api.openweathermap.org/data/2.5/forecast?q='+place.textContent+',MX&appid=b29ef4934f838648bd16e4f3c5bd7dfc';
 fetch(apiURLForecasts)
   .then((response) => response.json())
   .then((json) => {
+    var element="";
     for(var i=0;i<24;i++){
       element=json["list"][i];
     console.log(element);

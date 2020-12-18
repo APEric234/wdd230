@@ -1,28 +1,31 @@
 <html>
-  <head> 
 
+  <head> 
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/page.css">
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" ></script>
-  </head>
-  <body>
-    <div class="top picture" id="banner">
-      <img src="images/island.jpg">
-    </div>
-    <div id="nav"> 
-      <nav>
-        <a href="rentals.html">Scouter Rental</a>
-        
-        <a href="reservations.html">Reservations</a>
-        
-        <a href="tours.html">Tours</a>
-        
-        <a href="contact.html">Contact</a>
-        
-        <a href="page.html">Home</a>
-      </nav>
-    </div>
-    <table id="rentals">
-      <tr>
+    <link rel="stylesheet" href="css/medium.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div class="top picture" id="banner">
+    <img src="images/island.jpg">
+  </div>
+    <nav>
+      <a href="rentals.html">Scouter Rental</a>
+
+      <a href="reservations.html">Reservations</a>
+
+      <a href="tours.html">Tours</a>
+
+      <a href="contact.html">Contact</a>
+
+      <a href="page.html">Home</a>
+    </nav>
+  <h1>Available scooters for rent</h1>
+  <table id="rentals">
+    <tr>
       <Th>Half Day Reservation $</Th>
       <Th>Full Day Reservation $</Th>
       <Th>Walk in Half Day $</Th>
@@ -31,7 +34,79 @@
       <Th>Vehicle</Th>
     </tr>
   </table>
-    <script src="js/getjson.js"></script>
-    <div class="article"> Make a reservation today to come tour our beautiful island on the back of a Scooter!</div>
-  </body>
+  
+  <h1>Frequently asked questions</h1>
+  <div id="faq">
+  <ul>
+    <li>Do you require a deposit?
+      <ul>
+        <li> A $50 security deposit is required to confirm reservations.</li>
+      </ul>
+    </li>
+    <li>Do you require a drivers license? <ul>
+        <li>
+          A valid drivers license is required in hand at time of rental.</li>
+      </ul>
+    </li>
+
+    <li>Is there a age requirement? <ul>
+    <li>
+      No one under 12 years of age are allowed to ride on the scooters.</li>
+  </ul>
+  </li>
+
+  <li>Is there a fuel charge? <ul>
+      <li>
+        Fuel charge not included in rental fee.</li>
+    </ul>
+  </li>
+
+  <li>Is there a charge for mileage? <ul>
+      <li>
+        Unlimited mileage at no extra charge.</li>
+    </ul>
+  </li>
+
+  <li>Does it include insurance? <ul>
+      <li>
+        Liability insurance is provided free of charge.</li>
+    </ul>
+  </li>
+
+  <li>How far in advance must i call to reserve? <ul>
+  <li>
+    Reservations rate requires 24 hour prior notification.</li>
+  </ul>
+  </li>
+
+  <li>Do you include delivery? <ul>
+      <li>
+
+        Free delivery to Cozumel hotel, Airbnb, or private residence for 2+ day rentals.</li>
+    </ul>
+  </li>
+
+  <li>What payment types do you except? <ul>
+      <li>
+
+        Payment via Google Pay, cash, credit card, debit card, or PayPal.</li>
+    </ul>
+  </li>
+
+  <li>must rentals be returned to the same location? <ul>
+      <li>
+
+        Rentals may be returned to either location.</li>
+    </ul>
+  </li>
+
+  </ul>
+</div>
+ <!-- <script src="js/getjson.js"></script>-->
+  <div class="article center"> Make a reservation today to come tour our beautiful island on the back of a Scooter!</div>
+  <footer>
+    <a href="https://www.facebook.com/cozumelisland/"><img src="images/facebook.png"></a>
+  </footer>
+</body>
+
 </html>

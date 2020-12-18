@@ -1,15 +1,17 @@
 <html>
 
-<head>
-
-  <link rel="stylesheet" href="css/page.css">
-</head>
+  <head> 
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/page.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
 
 <body>
   <div class="top picture" id="banner">
     <img src="images/island.jpg">
   </div>
-  <div id="nav">
+
     <nav>
       <a href="rentals.html">Scouter Rental</a>
       
@@ -21,7 +23,7 @@
       
       <a href="page.html">Home</a>
     </nav>
-  </div>
+  <h1>Contact us to reserve a scooter now!</h1>
   <form method="get" action="thankyou.html">
     <datalist id="vehicles">
       <option value="Honda Metro"></option>
@@ -35,18 +37,21 @@
     <label for="fullname">Full Name:</label> <input type="text" id="fullname" name="fname" value="" required
       minlength="6" pattern="[A-z ]*"><br>
     <label for="email">Email:</label> <input type="email" id="email" name="email" value="dummy@mailinator.com"><br>
-    <label for="phone">Phone Number:</label> <input type="text" id="phone" name="phone" value="" required><br>
+    <label for="phone">Phone:</label> <input type="text" id="phone" name="phone" value="" required><br>
     <label for="Date">Date:</label> <input type="date" id="Date" name="email" value="" required><BR>
-    <label for="location">Country or State:</label> <input type="text" id="location" name="location" value="" required
+    <label for="location">Country/State:</label> <input type="text" id="location" name="location" value="" required
       minlength="2"><br>
 
     <label for="cruise">Cruise Line:</label> <input type="text" id="cruise" name="cruise" value="" minlength="6"
       pattern="[A-z ]*"><br>
 
-    <label for="additional">Additonal info you would like considered:</label> <input type="text" id="additional"
-      name="additional" value="" pattern="[A-z0-9 ]*"><br>
+    <label for="additional">Additonal info:</label> <input type="text" id="additional"
+      name="additional" value="" pattern="[A-z0-9 ]*">
       <input type="submit">
   </form>
+  <footer>
+    <a href="https://www.facebook.com/cozumelisland/"><img src="images/facebook.png"></a>
+  </footer>
 </body>
 
 </html>
