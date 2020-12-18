@@ -27,3 +27,8 @@ table{
 footer{
   font-size:20px;
 }
+#faq *{
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+}
