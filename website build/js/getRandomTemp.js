@@ -10,27 +10,30 @@ const apiURLForecasts = 'https://api.openweathermap.org/data/2.5/forecast?q='+pl
 fetch(apiURLForecasts)
   .then((response) => response.json())
   .then((json) => {
-    json["list"].forEach(element => {
-      console.log(element);
-      var time=element["dt_txt"];
-      console.log(time);
-      if(time.includes("18:00")){
-        var temp=element["main"]["temp"];
-        temp= kelvinconvert(temp);
-        var div = document.createElement("div");
-        div.id = "temps";
-        div.innerHTML =temp +" F";
-        var icon=element["weather"][0]["icon"];
-        var icon_url=image+icon+image_end;
-        div.style.backgroundImage = icon_url;
-        div.style.backgroundRepeat =" no-repeat";
-        div.style.backgroundSize = "cover";
-        div.style.backgroundPosition= "center";
+    for(var i=0;i<24;i++){
+      element=json["list"][i];
+    console.log(element);
+    var time=element["dt_txt"];
+    console.log(time);
+    if(time.includes("18:00")){
+      var temp=element["main"]["temp"];
+      var hum=element["main"]["humidity"];
+      temp= kelvinconvert(temp);
+      var div = document.createElement("div");
+      div.id = "temps";
+      div.innerHTML =temp +" F , with " +hum+"% humidity";
+      var icon=element["weather"][0]["icon"];
+      var icon_url=image+icon+image_end;
+      div.style.backgroundImage = icon_url;
+      div.style.backgroundRepeat =" no-repeat";
+      div.style.backgroundSize = "cover";
+      div.style.backgroundPosition= "center";
 
-        
-        app2.append(div);
+      
+      app2.append(div);
       }
-    });
+
+  }
     
   });
 

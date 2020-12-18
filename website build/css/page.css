@@ -1,0 +1,55 @@
+nav{
+  position: absolute;
+  top:10;
+  right:12%;
+ 
+}
+nav a{
+  color:#ffe980;
+  font-size: 1em;
+}
+#forecast {
+	display: grid;
+	grid-auto-flow:row;
+	row-gap: 10px;
+	margin-bottom: 20px;
+}
+nav a:hover{
+  color:red;
+}
+
+#banner{
+  position: relative;
+  width:80%;
+  height: 10em;
+  margin-left: 10%;
+}
+#banner img{
+  width:100%;
+  height: 100%;
+}
+body{
+  background-color: #2a0063;
+  color:#ffe980;
+}
+.article{
+  margin-left: 10%;
+  border: 1px solid #ffe980;
+  margin-right: 30%;
+  color:#C1839F;
+  font-size: 3em;
+}
+.article.left{
+  margin-left: 30%;
+  margin-right: 10%;
+}
+footer{
+  text-align: center;
+  margin-left: 10%;
+  
+  margin-right: 10%;
+  align-items: center;
+}
+footer *{
+  margin:auto;
+}
