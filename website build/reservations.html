@@ -1,26 +1,52 @@
 <html>
-  <head> 
 
-    <link rel="stylesheet" href="css/page.css">
-  </head>
-  <body>
-    <div class="top picture" id="banner">
-      <img src="images/island.jpg">
-    </div>
-    <div id="nav"> 
-      <nav>
-        <a href="#">Scouter Rental</a>
-        
-        <a href="#">Reservations</a>
-        
-        <a href="#">Place holder</a>
-        
-        <a href="#">Place holder</a>
-        
-        <a href="#">Place holder</a>
-      </nav>
-    </div>
-    <div>Hello World</div>
-    <div class="article"> Make a reservation today to come tour our beautiful island on the back of a Scooter!</div>
-  </body>
+<head>
+
+  <link rel="stylesheet" href="css/page.css">
+</head>
+
+<body>
+  <div class="top picture" id="banner">
+    <img src="images/island.jpg">
+  </div>
+  <div id="nav">
+    <nav>
+      <a href="rentals.html">Scouter Rental</a>
+      
+      <a href="reservations.html">Reservations</a>
+      
+      <a href="tours.html">Tours</a>
+      
+      <a href="contact.html">Contact</a>
+      
+      <a href="page.html">Home</a>
+    </nav>
+  </div>
+  <form method="get" action="thankyou.html">
+    <datalist id="vehicles">
+      <option value="Honda Metro"></option>
+      <option value="Honda Dio"></option>
+      <option value="Honda PCX"></option>
+      <option value="Honda Pioneer"></option>
+      <option value="Jeep wrangler 2 door"></option>
+      <option value="Jeep wrangler 4 door"></option>
+    </datalist>
+    <label for="type">Vehicles:</label> <input list="vehicles" id="type" name="type" required><br>
+    <label for="fullname">Full Name:</label> <input type="text" id="fullname" name="fname" value="" required
+      minlength="6" pattern="[A-z ]*"><br>
+    <label for="email">Email:</label> <input type="email" id="email" name="email" value="dummy@mailinator.com"><br>
+    <label for="phone">Phone Number:</label> <input type="text" id="phone" name="phone" value="" required><br>
+    <label for="Date">Date:</label> <input type="date" id="Date" name="email" value="" required><BR>
+    <label for="location">Country or State:</label> <input type="text" id="location" name="location" value="" required
+      minlength="2"><br>
+
+    <label for="cruise">Cruise Line:</label> <input type="text" id="cruise" name="cruise" value="" minlength="6"
+      pattern="[A-z ]*"><br>
+
+    <label for="additional">Additonal info you would like considered:</label> <input type="text" id="additional"
+      name="additional" value="" pattern="[A-z0-9 ]*"><br>
+      <input type="submit">
+  </form>
+</body>
+
 </html>
