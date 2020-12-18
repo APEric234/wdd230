@@ -19,6 +19,9 @@ form input{
 
   font-size: 20px;
 }
+table{
+  font-size:12px;
+}
 #forecast *{font-size:20px;
 }
 footer{
