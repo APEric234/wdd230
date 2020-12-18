@@ -12,7 +12,7 @@ function temp(car) {
   walk_h.textContent = car.half;
   let image_td=document.createElement("td");
   let image = document.createElement('img');
-  image.setAttribute('src', "/images/"+car.img);
+  image.setAttribute('src', "images/"+car.img);
   image.setAttribute('alt', car.name);
   card.appendChild(reserv_h);
   card.appendChild(resererv_f);
