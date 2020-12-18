@@ -6,22 +6,18 @@ function temp(car) {
   let resererv_f = document.createElement('td');
   let walk_h = document.createElement('td');
   let walk_f = document.createElement('td');
-  reserv_h = car.half_r;
-  resererv_f = car.full_r;
-  walk_f = car.full;
-  walk_h = car.half;
+  reserv_h.textContent = car.half_r;
+  resererv_f.textContent = car.full_r;
+  walk_f.textContent = car.full;
+  walk_h.textContent = car.half;
   let image_td=document.createElement("td");
   let image = document.createElement('img');
   image.setAttribute('src', "/images/"+car.img);
   image.setAttribute('alt', car.name);
+  card.appendChild(reserv_h);
+  card.appendChild(resererv_f);
+  card.appendChild(walk_h);
   image_td.appendChild(image);
-  card.insertCell(0)=reserv_h;
-  card.insertCell(1)=resererv_f;
-  card.insertCell(2)=walk_h;
-  card.insertCell(3)=walk_f;
-  card.insertCell(4)=image_td;
-
-  
   card.appendChild(image_td);
 
   document.querySelector('table#rentals').appendChild(card);
@@ -35,7 +31,6 @@ fetch(requestURL).then(function (response){
   function ( jsonObject){
     console.table(jsonObject);
     const vehicles = jsonObject['vehicles'];
-    console.table(vehicles);
     for (let vehic in vehicles){
       console.table(vehic);
       temp(vehicles[vehic]);
