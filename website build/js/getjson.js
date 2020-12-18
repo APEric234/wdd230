@@ -14,10 +14,14 @@ function temp(car) {
   let image = document.createElement('img');
   image.setAttribute('src', "/images/"+car.img);
   image.setAttribute('alt', car.name);
-  card.appendChild(reserv_h);
-  card.appendChild(resererv_f);
-  card.appendChild(walk_h);
   image_td.appendChild(image);
+  card.insertCell(0)=reserv_h;
+  card.insertCell(1)=resererv_f;
+  card.insertCell(2)=walk_h;
+  card.insertCell(3)=walk_f;
+  card.insertCell(4)=image_td;
+
+  
   card.appendChild(image_td);
 
   document.querySelector('table#rentals').appendChild(card);
