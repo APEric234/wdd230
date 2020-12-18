@@ -20,6 +20,7 @@ function temp(car) {
   card.appendChild(walk_f);
   image_td.appendChild(image);
   card.appendChild(image_td);
+  card.appendChild(name);
 
   document.querySelector('table#rentals').appendChild(card);
 }
