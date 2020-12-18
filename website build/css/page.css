@@ -59,3 +59,6 @@ table{
   color:#2A0063;
   border:1px solid #2EBFA5;
 }
+table>tr>td{
+  border:1px solid #2EBFA5;
+}

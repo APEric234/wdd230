@@ -17,6 +17,7 @@ function temp(car) {
   card.appendChild(reserv_h);
   card.appendChild(resererv_f);
   card.appendChild(walk_h);
+  card.appendChild(walk_f);
   image_td.appendChild(image);
   card.appendChild(image_td);
 
