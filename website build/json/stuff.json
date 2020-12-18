@@ -3,19 +3,19 @@
     "half":25,"full":35,"img":"metro.jpg"
   },
 {"name":"Honda Dio Scooter","persons":2,"half_r":30,"full_r":40,
-    "half":35,"full":45,"img":"metro.jpg"
+    "half":35,"full":45,"img":"dio.jpg"
   },
   {"name":"Honda PCX150 Scooter","persons":2,"half_r":40,"full_r":50,
-    "half":45,"full":55,"img":"metro.jpg"
+    "half":45,"full":55,"img":"pxc.jpg"
   },
   {"name":"Honda Pioneer ATV","persons":4,"half_r":50,"full_r":70,
-    "half":60,"full":80,"img":"metro.jpg"
+    "half":60,"full":80,"img":"pioneer.jpg"
   },
   {"name":"Jeep Wrangler - 4 door with a/c","persons":5,"half_r":70,"full_r":100,
-    "half":85,"full":125,"img":"metro.jpg"
+    "half":85,"full":125,"img":"4door.jpg"
   },
   {"name":"Jeep Wrangler - 2 door","persons":4,"half_r":60,"full_r":85,
-    "half":70,"full":90,"img":"metro.jpg"
+    "half":70,"full":90,"img":"2door.jpg"
   }
   
   ]
