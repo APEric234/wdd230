@@ -53,3 +53,9 @@ footer{
 footer *{
   margin:auto;
 }
+
+table{
+  background-color: #3083DC;
+  color:#2A0063;
+  border:1px solid #2EBFA5;
+}
