@@ -10,7 +10,7 @@ function temp(car) {
   resererv_f = car.full_r;
   walk_f = car.full;
   walk_h = car.half;
-  let image_td=document.createElement(td);
+  let image_td=document.createElement("td");
   let image = document.createElement('img');
   image.setAttribute('src', "/images/"+car.img);
   image.setAttribute('alt', car.name);
