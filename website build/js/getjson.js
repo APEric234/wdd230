@@ -31,6 +31,7 @@ fetch(requestURL).then(function (response){
   function ( jsonObject){
     console.table(jsonObject);
     const vehicles = jsonObject['vehicles'];
+    console.table(vehicles);
     for (let vehic in vehicles){
       console.table(vehic);
       temp(vehicles[vehic]);
